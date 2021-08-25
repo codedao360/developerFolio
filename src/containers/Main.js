@@ -18,6 +18,7 @@ import {StyleProvider} from "../contexts/StyleContext";
 import "./Main.scss";
 import Profile from "./profile/Profile";
 
+
 export default class Main extends Component {
   constructor(props) {
     super(props);

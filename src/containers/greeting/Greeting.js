@@ -9,6 +9,7 @@ import Button from "../../components/button/Button";
 
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import AudioPlay from "../../components/audioplay/AudioPlay";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
@@ -38,10 +39,11 @@ export default function Greeting() {
                 {greeting.subTitle}
               </p>
               <SocialMedia />
+              <AudioPlay />
               <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
+                <Button text="Liên hệ với tôi" href="#contact" />
                 <Button
-                  text="See my resume"
+                  text="Xem CV"
                   newTab={true}
                   href={greeting.resumeLink}
                 />
